@@ -1,0 +1,10 @@
+Using the Twitter.py and the TwitterAPI I was able to collect twitters that had the "I'm listening to on #pandora" phrase on it. I let the program running for two and a half days and every time that someone twitted something with this, it was collected. The result was saved on the file twitter3
+
+After collecting the twits, I created another code, timeline.py, which would at first select only the users tht got 500 or more twits on their timeline, and then, after that, would eliminate duplicated users. for those users, which were 2511, I tried to collect all their timeline history, but 40 of them had their privileges changed so one would not be able to collect information from them. all the timeline's info was saved on a fold called twitters.
+
+With all the information collected and the discogs_client API, I created the read.py, which was a code were one would be able to check all the informations on all the twits collected, and if they matched the regular expression (which was one created to search for twits that were about Pandora), it would get the name of the artist and them assign it to a genre of music. All the information that was got from this part was saved on the data's fold.
+
+Afterwards, another code was created, which was the percentInfo.py. this code had the objective to see the percentage information of each user regarding each genre that this user listened and also to sum all the genres percent and to see which was the most popular genres when it came to all the users that the data was collected. All the information collected from this code was saved on a fold called data_person.
+
+And finally I created a code called BehaviorCode where I used as base some documents with the top 100 words for each of the five personality's traits. those documents were available on the website http://www.seas.upenn.edu/~hansens/ , which is the page of professor Hanse Andrew Schwartz. With this information I was able to make a code to check each word from each user's timeline and see if it was one of the 100 words, and, if it was, I would sum the value of this word in a dictionary class.
+
